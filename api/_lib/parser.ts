@@ -1,6 +1,7 @@
 import { IncomingMessage } from 'http';
 import { parse } from 'url';
 import { ParsedRequest, Theme } from './types';
+import config from '../config';
 
 export function parseRequest(req: IncomingMessage) {
     console.log('HTTP ' + req.url);
@@ -52,8 +53,8 @@ function getArray(stringOrArray: string[] | string | undefined): string[] {
 
 function getDefaultImages(images: string[], theme: Theme): string[] {
     const defaultImage = theme === 'light'
-        ? 'https://morethan-log.vercel.app/avatar.svg'
-        : 'https://morethan-log.vercel.app/avatar.svg';
+        ? config.defaultImage.light
+        : config.defaultImage.dark;
 
     if (!images || !images[0]) {
         return [defaultImage];
