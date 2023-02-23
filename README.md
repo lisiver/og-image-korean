@@ -12,7 +12,7 @@ For each keystroke, headless chromium is used to render an HTML page and take a 
 
 See the image embedded in the tweet for a real use case.
 
-기존 OG 이미지 생성기가 한글은 지원을 안해줘서(폰트가 깨짐) 내가 쓰려고 만듬
+기존 OG 이미지 생성기가 한글은 지원을 안해줘서(폰트가 깨짐) 내가 쓰려고 만듬 <- 이걸 또 나대로 쓰려고 가져옴
 
 - [관련 포스트](https://morethanmin.com/how-to-generate-dynamic-og-image)
 

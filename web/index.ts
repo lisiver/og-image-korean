@@ -1,4 +1,5 @@
 import type { ParsedRequest, Theme, FileType } from '../api/_lib/types';
+import config from './config';
 const { H, R, copee } = (window as any);
 let timeout = -1;
 
@@ -145,14 +146,14 @@ const markdownOptions: DropdownOption[] = [
 ];
 
 const imageLightOptions: DropdownOption[] = [
-    { text: 'Vercel', value: 'https://morethan-log.vercel.app/avatar.svg' },
+    { text: 'Vercel', value: config.avatarSvgUrl },
     { text: 'Next.js', value: 'https://assets.vercel.com/image/upload/front/assets/design/nextjs-black-logo.svg' },
     { text: 'Hyper', value: 'https://assets.vercel.com/image/upload/front/assets/design/hyper-color-logo.svg' },
 ];
 
 const imageDarkOptions: DropdownOption[] = [
 
-    { text: 'Vercel', value: 'https://morethan-log.vercel.app/avatar.svg' },
+    { text: 'Vercel', value: config.avatarSvgUrl },
     { text: 'Next.js', value: 'https://assets.vercel.com/image/upload/front/assets/design/nextjs-white-logo.svg' },
     { text: 'Hyper', value: 'https://assets.vercel.com/image/upload/front/assets/design/hyper-bw-logo.svg' },
 ];
